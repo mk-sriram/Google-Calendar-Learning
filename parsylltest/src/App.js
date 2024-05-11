@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 import { useSession, useSessionContext, useSupabaseClient } from '@supabase/auth-helpers-react';
 function App() {
   const session = useSession(); //curent active tokens are stores inside here // tokens 
@@ -26,6 +27,7 @@ function App() {
   console.log(session); 
   return (
     <div className="App">
+      <h1> HELLO </h1>
       <div style = {{width: "400", margin: "30px auto"}}>
         {session ? 
         <> 
