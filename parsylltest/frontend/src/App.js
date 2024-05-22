@@ -59,7 +59,7 @@ function App() {
       };
 
       try {
-        const response = await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events', {
+        const response = await fetch('http://localhost:5000/create-events', {
           method: "POST",
           headers: {
             'Authorization': `Bearer ${session.provider_token}`,
